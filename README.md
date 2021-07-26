@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](calculadora-gorjetas.netlify.app)
+- Live Site URL: [live site](https://calculadora-gorjetas.netlify.app/)
 
 ## My process
 
