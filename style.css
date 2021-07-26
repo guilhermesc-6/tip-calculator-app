@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+}
+
+input::-webkit-input-placeholder,
+input {
+  font-family: "Space Mono", monospace;
+}
+
+input:-ms-input-placeholder,
+input {
+  font-family: "Space Mono", monospace;
+}
+
+input::-ms-input-placeholder,
+input {
+  font-family: "Space Mono", monospace;
+}
+
+input::placeholder,
+input {
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #c5e4e7;
+}
+
+.container .logo {
+  text-transform: uppercase;
+  color: #00494d;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.container .form-div {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+  width: 70vw;
+  border-radius: 20px;
+  color: #5e7a7d;
+}
+
+.container .form-div .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 30px;
+  width: 50%;
+}
+
+.container .form-div .forms span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.container .form-div .forms .tip,
+.container .form-div .forms .bill,
+.container .form-div .forms .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .form-div .forms .bill input {
+  background: url(./images/icon-dollar.svg) no-repeat left #f4fafa;
+}
+
+.container .form-div .forms .people input {
+  background: url(./images/icon-person.svg) no-repeat left #f4fafa;
+}
+
+.container .form-div .forms input[type="text"] {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #00494d;
+}
+
+.container .form-div .forms .warning input {
+  border: 1px solid #ee5151;
+}
+
+.container .form-div .forms .tip-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.container .form-div .forms .tip-btn input {
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background: #00494d;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .form-div .forms .tip-btn input[type="button"]:hover {
+  background: #c5e4e7;
+  color: #00494d;
+}
+
+.container .form-div .forms .tip-btn .custom-btn {
+  background: #f4fafa;
+  color: #00494d;
+  text-align: right;
+}
+
+.container .form-div .forms .tip-btn .custom-btn .selected {
+  background: #f4fafa;
+  color: #00494d;
+}
+
+.container .form-div .forms .tip-btn .selected {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.container .form-div .results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+  background: #00494d;
+  width: 50%;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.container .form-div .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.container .form-div .amount .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .form-div .amount .result .result-tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .form-div .amount .result .result-tip span {
+  font-size: 0.8rem;
+  color: #7f9c9f;
+}
+
+.container .form-div .amount .result .result-final {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.container .form-div .reset-btn {
+  width: 100%;
+}
+
+.container .form-div .reset-btn button {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(38, 192, 171, 0.344);
+  color: #00494d;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.container .form-div .reset-btn:hover {
+  background: #c5e4e7;
+  border-radius: 5px;
+}
+
+.container .form-div .reset-btn .selected {
+  background: #26c0ab;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .container .form-div {
+    min-height: 80vh;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .container .form-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 650px;
+  }
+  .container .form-div .forms,
+  .container .form-div .results {
+    width: 100%;
+  }
+  .container .form-div .results {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container .logo {
+    margin-bottom: 20px;
+  }
+  .container .form-div {
+    width: 100vw;
+    height: 690px;
+    border-radius: 20px 20px 0 0;
+  }
+  .attribution {
+    background-color: #fff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
