@@ -277,7 +277,7 @@ input {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   .container .logo {
     margin-bottom: 20px;
   }
